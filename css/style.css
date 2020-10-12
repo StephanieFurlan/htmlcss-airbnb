@@ -6,9 +6,9 @@
 
 .container {
    /* opzione - usando l'intera larghezza */
-   width: 100%;
+   /* width: 100%; */
    /* opzione - usando vw */
-   /* width: 60vw; */
+   width: 60vw;
    margin: 0 auto;
 }
 
@@ -20,6 +20,7 @@
    background-size: cover;
    background-repeat: no-repeat;
    background-position: center center;
+   position: relative;
 }
 
 .room-card:not(:last-child) {
@@ -36,4 +37,22 @@
 
 .tree-house {
    background-image: url("../img/tree-house.jpg");
+}
+
+.room-text {
+   visibility: hidden;
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+   color: white;
+   font-size:  50px;
+   background-color: rgba(0, 0, 0, 0.5);
+   text-align: center;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+.room-card:hover .room-text {
+   visibility: visible;
 }
