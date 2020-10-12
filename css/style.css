@@ -40,16 +40,16 @@
 }
 
 .room-text {
-   visibility: hidden;
+   color: white;
+   background-color: rgba(0, 0, 0, 0.5);
+   font-size:  50px;
+   text-align: center;
+   padding: 20px;
+   /* visibility: hidden; */
    position: absolute;
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
-   color: white;
-   font-size:  50px;
-   background-color: rgba(0, 0, 0, 0.5);
-   text-align: center;
-   padding: 20px;
 }
 
 .room-card, .room-text {
@@ -57,7 +57,7 @@
 }
 
 .room-card:hover .room-text {
-   visibility: visible;
+   /* visibility: visible; */
    background-color: rgba(0, 0, 0, 0.8);
    border: 1px solid white;
    cursor: pointer;
