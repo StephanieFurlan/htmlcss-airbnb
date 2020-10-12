@@ -23,8 +23,6 @@
    position: relative;
 }
 
-.
-
 .room-card:not(:last-child) {
    margin-bottom: 10px;
 }
@@ -52,6 +50,7 @@
    left: 50%;
    top: 50%;
    transform: translate(-50%, -50%);
+   text-decoration: none;
 }
 
 .room-card, .room-text {
